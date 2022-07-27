@@ -1,0 +1,16 @@
+.layout-footer{
+    padding: 2rem;
+    font-size: 1rem;
+    background-color: var(--surface-ground);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layout-footer-right{
+    letter-spacing: 4px;
+}
+
+a{
+    color: black;
+}
