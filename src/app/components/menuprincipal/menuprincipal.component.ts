@@ -27,7 +27,7 @@ export class MenuprincipalComponent implements OnInit {
       },
       {
         label: "Panadería",
-        icon: "/assets/Imágenes/croissant.png",
+        icon: "croissant-icon",
         routerLink: "/panaderia"
       },
       {
