@@ -13,7 +13,7 @@ import { ConfiteriaComponent } from './components/confiteria/confiteria.componen
 import { PostresComponent } from './components/postres/postres.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenubarModule } from 'primeng/menubar';
-import {GalleriaModule} from 'primeng/galleria';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
   declarations: [

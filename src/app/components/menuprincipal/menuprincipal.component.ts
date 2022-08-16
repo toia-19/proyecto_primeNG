@@ -26,19 +26,25 @@ export class MenuprincipalComponent implements OnInit {
         routerLink: "/contacto"
       },
       {
-        label: "Panadería",
-        icon: "croissant-icon",
-        routerLink: "/panaderia"
-      },
-      {
-        label: "Confitería",
-        icon: "",
-        routerLink: "/confiteria"
-      },
-      {
-        label: "Postres",
-        icon: "",
-        routerLink: "/postres"
+        label: "Secciones",
+        icon: "/assets/Imágenes/croissant.svg",
+        items: [
+          {
+            label: "Panadería",
+            icon: "",
+            routerLink: "/panaderia"
+          },
+          {
+            label: "Confitería",
+            icon: "",
+            routerLink: "/confiteria"
+          },
+          {
+            label: "Postres",
+            icon: "",
+            routerLink: "/postres"
+          }
+        ]
       }
     ];
   }
