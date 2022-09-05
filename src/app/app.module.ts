@@ -13,7 +13,8 @@ import { ConfiteriaComponent } from './components/confiteria/confiteria.componen
 import { PostresComponent } from './components/postres/postres.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenubarModule } from 'primeng/menubar';
-import { GalleriaModule } from 'primeng/galleria';
+import { CarouselModule } from 'primeng/carousel';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { GalleriaModule } from 'primeng/galleria';
     AppRoutingModule,
     AccordionModule,
     MenubarModule,
-    GalleriaModule
+    CarouselModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

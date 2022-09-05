@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
   selector: 'app-inicio',
@@ -9,18 +8,15 @@ import { GalleriaModule } from 'primeng/galleria';
 export class InicioComponent implements OnInit {
   title = 'Inicio';
 
-  images: GalleriaModule[] = [];
-    
   constructor() { }
 
+  inicio: string[] = [
+    "../assets/Imágenes/inicio.jpeg",
+    "assets/Imágenes/inicio1.jpg",
+    "assets/Imágenes/inicio2.jpg",
+    "assets/Imágenes/inicio3.jpg"
+  ]
+
   ngOnInit(): void {
-    this.images = [
-      {
-        imagen: "../Imágenes/panaderia1.jpg"
-      },
-      {
-        imagen: "src/Imágenes/panaderia2.jpg"
-      }
-    ]
   }
 }

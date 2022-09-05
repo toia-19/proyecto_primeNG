@@ -1,14 +1,5 @@
-<p-galleria [value]="images">
-    <ng-template pTemplate="item" let-item>
-        <img src="assets/Imágenes/inicio.jpg"/>
+<p-carousel [value]="inicio">
+    <ng-template let-car pTemplate="item">
+        <img src="{{inicio}}" alt="Imagen" style="width: 50%; height: 75%; margin: 0 25%;">
     </ng-template>
-    <ng-template pTemplate="item" let-item>
-        <img src="assets/Imágenes/inicio1.jpg"/>
-    </ng-template>
-    <ng-template pTemplate="item" let-item>
-        <img src="assets/Imágenes/inicio2.jpg"/>
-    </ng-template>
-    <ng-template pTemplate="item" let-item>
-        <img src="assets/Imágenes/inicio3.jpg"/>
-    </ng-template>
-</p-galleria>
+</p-carousel>
