@@ -11,7 +11,7 @@ export class InicioComponent implements OnInit {
   constructor() { }
 
   inicio: string[] = [
-    "../assets/Imágenes/inicio.jpeg",
+    "assets/Imágenes/inicio.jpeg",
     "assets/Imágenes/inicio1.jpg",
     "assets/Imágenes/inicio2.jpg",
     "assets/Imágenes/inicio3.jpg"
