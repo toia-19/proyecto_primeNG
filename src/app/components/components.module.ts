@@ -7,6 +7,7 @@ import { PanaderiaComponent } from './panaderia/panaderia.component';
 import { PostresComponent } from './postres/postres.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InicioComponent } from './inicio/inicio.component';
     PanaderiaComponent,
     PostresComponent,
     ContactoComponent,
-    InicioComponent
+    InicioComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule

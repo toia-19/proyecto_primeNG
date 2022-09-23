@@ -1,0 +1,12 @@
+/* Tamaño y separación de las Cards */
+.card{
+    width: 21%;
+    margin: 2%;
+    height: 5%;
+    display: inline-block;
+}
+
+#boton{
+    background-color: #9D5C0D;
+    border-color: #FFF7AE;
+}

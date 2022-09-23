@@ -11,6 +11,16 @@
     letter-spacing: 4px;
 }
 
-a{
-    color: black;
+#footer{
+    background-color: #E5890A;
+    color: #FFF7AE;
+}
+
+.pi{
+    color: #F6D167;
+    padding-right: 4px;
+}
+
+.pi:hover{
+    color: #FAFAFA;
 }

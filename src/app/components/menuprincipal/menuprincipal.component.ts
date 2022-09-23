@@ -27,7 +27,7 @@ export class MenuprincipalComponent implements OnInit {
       },
       {
         label: "Secciones",
-        icon: "/assets/Imágenes/croissant.svg",
+        icon: "pi pi-list",
         items: [
           {
             label: "Panadería",

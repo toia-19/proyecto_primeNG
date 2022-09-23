@@ -1,9 +1,12 @@
-<p-card>
+<p-card class="card" *ngFor="let col of coleccionConfiteria">
     <ng-template pTemplate="header">
-        Header content here
+        <img alt="Card" [src]="col.imagen" height="300px">
+        <h1>{{col.nombre}}</h1>
+        <h3>${{col.precio}}</h3>
+        <div class="boton">
+            <button id="boton" pButton class="p-button-success" label="Comprar"></button>
+        </div>
     </ng-template>
-    Body Content
-    <ng-template pTemplate="footer">
-        Footer content here
-    </ng-template>
+    <div class="" style="text-align: center;">
+    </div>
 </p-card>

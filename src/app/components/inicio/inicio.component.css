@@ -1,0 +1,23 @@
+.seccion{
+    text-align: center;
+}
+
+.card{
+    margin: 2%;
+    height: 5%;
+    display: inline-block;
+}
+
+.boton{
+    background-color: #F6D167;
+    border-color: #F6D167;
+}
+
+.boton:hover{
+    background-color: #9D5C0D;
+    border-color: #9D5C0D;
+}
+
+img{
+    padding: 20px;
+}

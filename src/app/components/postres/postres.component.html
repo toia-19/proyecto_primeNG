@@ -1,1 +1,12 @@
-<p>postres works!</p>
+<p-card class="card" *ngFor="let col of coleccionPostres">
+    <ng-template pTemplate="header">
+        <img alt="Card" [src]="col.imagen" height="300px">
+        <h1>{{col.nombre}}</h1>
+        <h3>${{col.precio}}</h3>
+        <div class="boton">
+            <button id="boton" pButton class="p-button-success" label="Comprar"></button>
+        </div>
+    </ng-template>
+    <div class="" style="text-align: center;">
+    </div>
+</p-card>

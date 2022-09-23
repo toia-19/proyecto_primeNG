@@ -1,6 +1,10 @@
 .contacto{
     margin: 2%;
     height: 5%;
-    border: solid 2px orange;
+    border: solid 4px #F6D167;
     display: inline-block;
+}
+
+.card{
+    text-align: center;
 }

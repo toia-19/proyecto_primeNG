@@ -3,3 +3,24 @@
         <img src="{{inicio}}" alt="Imagen" style="width: 50%; height: 75%; margin: 0 25%;">
     </ng-template>
 </p-carousel>
+
+<p-card header="¡Secciones!" class="seccion">
+    <p-card header="Panadería" subheader="Los mejores panizados." [style]="{width: '200px'}" styleClass="p-card-shadow" class="card">
+        <ng-template pTemplate="header">
+            <img alt="Foto de Panadería" src="assets/Imágenes/panaderia.jpg">
+        </ng-template>
+        <button pButton class="boton" routerLink="/panaderia">Ver más</button>
+    </p-card>
+    <p-card header="Confitería" subheader="Para una rica merienda." [style]="{width: '200px'}" styleClass="p-card-shadow" class="card">
+        <ng-template pTemplate="header">
+            <img alt="Foto de Confitería" src="assets/Imágenes/confiteria.jpg">
+        </ng-template>
+        <button pButton class="boton" routerLink="/confiteria">Ver más</button>
+    </p-card>
+    <p-card header="Postres" subheader="Los más dulces postres." [style]="{width: '200px'}" styleClass="p-card-shadow" class="card">
+        <ng-template pTemplate="header">
+            <img alt="Foto de Postre" src="assets/Imágenes/postres.jpg">
+        </ng-template>
+        <button pButton class="boton" routerLink="/postres">Ver más</button>
+    </p-card>
+</p-card>
