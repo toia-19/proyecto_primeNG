@@ -3,27 +3,24 @@
         <img src="/assets/Imágenes/icon.png" height="30" class="mr-2" alt="ícono">
     </ng-template>
     <ng-template pTemplate="end">
-        <button type="button" pButton class="p-button-rounded" id="boton" label="Iniciar"></button>
+        <button type="button" pButton pRipple class="p-button-rounded" id="boton" label="Iniciar" (click)="showModalDialog()"></button>
     </ng-template>
 </p-menubar>
 
-<!--
-    (click)="showModalDialog()"
-
-    <div class="wrapper">
-    <p-dialog header="Iniciar sesion" [(visible)]="modalVisible">
+<div class="wrapper">
+    <p-dialog header="Iniciar Sesión" [(visible)]="modalVisible" class="formulario">
         <form [formGroup]="Usuarios">
-            !-- Label Nombre Usuario --
+            <!-- Label Nombre Usuario -->
             <span class="p-float-label">
                 <h2>Usuario:</h2>
-                <input type="text" id="float-input" pInputText formControlName="usuarioName">
+                <input type="text" id="float-input" pInputText formControlName="nombreUser">
             </span>
-            !-- Label Contraseña --
+            <!-- Label Contraseña -->
             <span class="p-float-label">
                 <h2>Contraseña:</h2>
-                <input type="password" id="float-input" pInputText formControlName="usuarioPassword">
+                <input type="password" id="float-input" pInputText formControlName="contrasenaUser">
             </span>
             <button id="boton" style="margin-top: 15px;" pButton pRipple type="submit" class="p-button-rounded p-button-success" (click)="verificarUsuario()" label="Ingresar"></button>
         </form>
     </p-dialog>
-</div> -->
+</div>

@@ -1,0 +1,15 @@
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.titulo2{
+    text-align: left;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.coleccion{
+    padding-bottom: 20px;
+}

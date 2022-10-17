@@ -1,1 +1,159 @@
-<p>admin works!</p>
+<h1 class="titulo">Bienvenido, admin</h1>
+
+<!-- Panaderia -->
+<section>
+    <!-- Card para MOSTRAR Panaderia -->
+    <div class="coleccion">
+        <h2 class="titulo2">Panadería</h2>
+        <p-table responsiveLayout="scroll" [value]="coleccionPanaderia">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Funciones</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-panaderia>
+                <tr style="font-size: 15px;">
+                    <td>
+                        <p>{{panaderia.nombre}}</p>
+                    </td>
+                    <td>
+                        <p>${{panaderia.precio}}</p>
+                    </td>
+                    <td type="image"><img [src]="panaderia.imagen" alt="100px" width="100px" height="100px"></td>
+
+                    <td>
+                        <button pButton pRipple type="button" id="editar" icon="pi pi-pencil" pButton
+                            class="p-button-success" label="Editar">
+                            <!--(click)="mostrarEliminar(producto)"-->
+                        </button>
+                        <button pButton pRipple type="button" id="borrar" icon="pi pi-trash" pButton
+                            class="p-button-danger" label="Borrar">
+                        </button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</section>
+
+<!-- Confiteria -->
+<section>
+    <!-- Card para MOSTRAR Confiteria -->
+    <div class="coleccion">
+        <h2 class="titulo2">Confitería</h2>
+
+        <p-table responsiveLayout="scroll" [value]="coleccionConfiteria">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Funciones</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-confiteria>
+                <tr style="font-size: 15px;">
+                    <td>
+                        <p>{{confiteria.nombre}}</p>
+                    </td>
+                    <td>
+                        <p>${{confiteria.precio}}</p>
+                    </td>
+                    <td type="image"><img [src]="confiteria.imagen" alt="100px" width="100px" height="100px"></td>
+
+                    <td>
+                        <button pButton pRipple type="button" id="editar" icon="pi pi-pencil" pButton
+                            class="p-button-success" label="Editar">
+                            <!--(click)="mostrarEliminar(producto)"-->
+                        </button>
+                        <button pButton pRipple type="button" id="borrar" icon="pi pi-trash" pButton
+                            class="p-button-danger" label="Borrar">
+                        </button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</section>
+
+<!-- Postres -->
+<section>
+    <!-- Card para MOSTRAR Postres -->
+    <div class="coleccion">
+        <h2 class="titulo2">Postres</h2>
+
+        <p-table responsiveLayout="scroll" [value]="coleccionPostres">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Funciones</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-postres>
+                <tr style="font-size: 15px;">
+                    <td>
+                        <p>{{postres.nombre}}</p>
+                    </td>
+                    <td>
+                        <p>${{postres.precio}}</p>
+                    </td>
+                    <td type="image"><img [src]="postres.imagen" alt="100px" width="100px" height="100px"></td>
+
+                    <td>
+                        <button pButton pRipple type="button" id="editar" icon="pi pi-pencil" pButton
+                            class="p-button-success" label="Editar">
+                            <!--(click)="mostrarEliminar(producto)"-->
+                        </button>
+                        <button pButton pRipple type="button" id="borrar" icon="pi pi-trash" pButton
+                            class="p-button-danger" label="Borrar">
+                        </button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</section>
+
+
+<!-- Formulario para AGREGAR Producto -->
+<!-- <p-dialog header="Agregar Producto" [(visible)]="modalVisible">
+    <form [formGroup]="Panaderia">
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText formControlName="nombre">
+            <label for="float-input">Nombre</label>
+        </span>
+        <span class="p-float-label">
+            <input id="float-input" type="number" pInputText formControlName="precio">
+            <label for="float-input">Precio</label>
+        </span>
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText formControlName="imagen">
+            <label for="float-input">Imagen</label>
+        </span>
+        <div class="" style="text-align: center; margin-top: 5px;">
+            <button pButton type="submit" label="{{textBoton}}" (click)="cargarDatos()"></button>
+        </div>
+    </form>
+</p-dialog> -->
+
+<!-- Cartel de Advertencia antes de ELIMINAR -->
+<!-- <p-dialog header="¡¡ADVERTENCIA!!" [(visible)]="eliminarVisible">
+    <p>
+        ¿Deseas eliminar este producto?
+    </p>
+    <button pButton pRipple type="button" icon="pi pi-check" class="p-button-rounded" (click)="borrarProducto()"></button>
+    <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded"
+        (click)="eliminarVisible=false">
+    </button>
+
+</p-dialog> -->
+
+<!--este es el boton que agrega la informacion a los productos-->
+<!-- <div class="boton col-12">
+    <button pButton class="p-button-success" label="Agregar producto" (click)="mostrarDialogo()"></button>
+</div> -->

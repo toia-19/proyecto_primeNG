@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+#borrar{
+    background-color: #FF1700;
+    margin: 2px;
+}
+
+#editar{
+    background-color: #06FF00;
+    margin: 2px;
+}

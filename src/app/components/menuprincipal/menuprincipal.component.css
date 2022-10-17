@@ -2,3 +2,30 @@
     background-color: #9D5C0D;
     border-color: #FFF7AE;
 }
+
+/*Menubar*/
+
+.p-menu-list {
+    background-color: var(--primary) !important;
+}
+.p-menuitem {
+    background-color: var(--primary) !important;
+}
+.p-menu-list:hover {
+    background-color: #000 !important;
+}
+.p-menuitem:hover {
+    background-color: #000 !important;
+}
+.p-menuitem-text, .p-menuitem-icon, .p-submenu-icon {
+    color: var(--text-primary) !important;
+}
+
+.formulario{
+    text-align: center;
+    margin: 10px;
+}
+
+#float-input{
+    padding: 5px;
+}

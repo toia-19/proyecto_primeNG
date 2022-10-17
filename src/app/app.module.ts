@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { AccordionModule } from 'primeng/accordion';
 import { environment } from 'src/environments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Páginas
 import { MenuprincipalComponent } from './components/menuprincipal/menuprincipal.component';
@@ -24,6 +25,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { CarouselModule } from 'primeng/carousel';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
+import { TableModule } from 'primeng/table';
 
 // Servicios
 import { UsuariosService } from './servicios/usuarios.service';
@@ -52,7 +55,10 @@ import { PostresService } from './servicios/postres.service';
     MenubarModule,
     CarouselModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    ReactiveFormsModule,
+    DialogModule,
+    TableModule
   ],
   providers: [UsuariosService, ConfiteriaService, PanaderiaService, PostresService], // patentación de servicios
   bootstrap: [AppComponent]

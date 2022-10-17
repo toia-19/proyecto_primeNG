@@ -3,10 +3,39 @@
         <img alt="Card" [src]="col.imagen" height="300px">
         <h1>{{col.nombre}}</h1>
         <h3>${{col.precio}}</h3>
-        <div class="boton">
-            <button id="boton" pButton class="p-button-success" label="Comprar"></button>
-        </div>
+        <button id="boton" pButton class="p-button-success" label="Comprar"></button>
     </ng-template>
-    <div class="" style="text-align: center;">
-    </div>
+    <ng-template pTemplate="footer">
+        <button id="editar" icon="pi pi-pencil" pButton class="p-button-success" label="Editar"></button>
+        <button id="borrar" icon="pi pi-trash" pButton class="p-button-danger" label="Borrar"></button>
+    </ng-template>
 </p-card>
+
+<!-- <div class="coleccion">
+    <p-table responsiveLayout="scroll" [value]="coleccionProductos">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th>Funciones</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-producto >
+            <tr style="font-size: 15px;">
+                <td><p>{{producto.nombre}}</p></td>
+                <td><p>{{producto.marca}}</p></td>
+                <td><p>${{producto.precio}}</p></td>
+                <td type="image"><img [src]="producto.imagen" alt="100px" width="" height="100px"></td>
+                <td> 
+                    <button pButton pRipple type="button" icon="pi pi-pencil" style="margin:10px ;" class="p-button-success"
+                        (click)="mostrarEditar(producto)">
+                    </button>
+                    <button pButton pRipple type="button" icon="pi pi-trash" style="margin:10px ;" class="p-button-danger"
+                        (click)="mostrarEliminar(producto)">
+                    </button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div> -->

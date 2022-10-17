@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './components/admin/admin.component';
 import { ConfiteriaComponent } from './components/confiteria/confiteria.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -24,6 +25,9 @@ const routes: Routes = [
   },
   {
     path:'postres',component:PostresComponent
+  },
+  {
+    path:'admin',component:AdminComponent
   }
 ];
 
